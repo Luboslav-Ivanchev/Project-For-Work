@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="container">
+
+  <header>Login form</header>
+
+  <form action="#">
+    <div class="form first">
+      <div class="details personal">
+        <span class="title">Fill all inputs to login</span>
+
+        <div class="fields">
+
+          <div class="input-field">
+            <label>Username</label>
+            <input type="text" placeholder="Enter your Username" required>
+          </div>
+
+
+          <div class="input-field">
+            <label>Email</label>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+
+
+          <div class="input-field">
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password" required>
+          </div>
+
+          <div class="input-field">
+            <label>Repeat Password</label>
+            <input type="password" placeholder="Enter your repeat-password" required>
+          </div>
+
+
+          <p>Forgot your <a href="/forget-password" style="text-decoration: none">password</a>?</p>
+
+
+          <div class="input-field">
+            <button  type="submit"  id="login" (click)="login($event)">Login</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </form>
+
+  <br>
+
+  <div class="container signin">
+    <p>Already have an account?<a href="/register" style="text-decoration: none">Sign up</a>.</p>
+
+  </div>
+
+</div>
+<!--<script src="script.js"></script>-->
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body>
+<div class="container">
+
+  <header>Registration</header>
+
+  <form action="#" class="formRegister">
+    <div class="form first">
+      <div class="details personal">
+        <span class="title">Details for your registration</span>
+
+        <div class="fields">
+
+          <div class="input-field">
+            <label>Username</label>
+            <input type="text" placeholder="Enter your Username" required>
+          </div>
+
+          <div class="input-field">
+            <label>Firstname</label>
+            <input type="text" placeholder="Enter your firstname" required>
+          </div>
+
+          <div class="input-field">
+            <label>Lastname</label>
+            <input type="text" placeholder="Enter your lastname" required>
+          </div>
+
+          <div class="input-field">
+            <label>Email</label>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+
+
+          <div class="input-field">
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password" required >
+
+          </div>
+
+          <div class="input-field">
+            <label>Repeat Password</label>
+            <input type="password" placeholder="Enter your repeat-password" required>
+          </div>
+
+          <div class="input-field">
+            <label>Mobile Number</label>
+            <input type="text" placeholder="Enter your mobile number" required>
+          </div>
+
+          <div class="input-field">
+            <label>Gender</label>
+            <select required class="optionValue" (change)="myNewFunction($event);">
+              <option  >Select gender</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Others</option>
+            </select>
+          </div>
+
+          <div class="input-field">
+            <label>Security Question</label>
+            <input type="text" placeholder="Enter your ccupation" required>
+          </div>
+        </div>
+      </div>
+
+
+       <button  (click)="add($event)">Add something personal to your account!</button>
+
+
+      <div id="addInputs" style="display:none">
+
+      <div class="details ID">
+        <span class="title">Personal Details</span>
+
+        <div class="fields">
+          <div class="input-field">
+            <label>Country</label>
+            <input type="text" placeholder="Enter your country" required>
+          </div>
+
+          <div class="input-field">
+            <label>Town</label>
+            <input type="text" placeholder="Enter your town" required>
+          </div>
+
+          <div class="input-field">
+            <label>PostCode</label>
+            <input type="text" placeholder="Enter your postcode" required>
+          </div>
+
+          <div class="input-field">
+            <label>Address on your street</label>
+            <input type="text" placeholder="Enter address on your street" required>
+          </div>
+
+          <div class="input-field">
+            <label>Height</label>
+            <input type="text" placeholder="Enter your height" required>
+          </div>
+
+          <div class="input-field">
+            <label>Favorite food</label>
+            <input type="text" placeholder="Enter favorite food" required>
+          </div>
+
+          <div class="input-field">
+            <label>Favorite drink</label>
+            <input type="text" placeholder="Enter your drink" required>
+          </div>
+
+          <div class="input-field">
+            <label>Weight</label>
+            <input type="text" placeholder="Enter your weight" required>
+          </div>
+
+          <div class="input-field">
+            <button type="submit" class="hide" id="hide" (click)="hide($event)">Hide something personal to your account!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <button style="text-align: center" type="submit"  id="register" (click)="registration($event)">Make your Registration!</button>
+
+      <div class="visible-div">
+
+      </div>
+    </div>
+  </form>
+
+  <br>
+
+<div class="container signin">
+  <p>Already have an account?<a href="/login" style="text-decoration: none">Sign in</a>.</p>
+</div>
+
+</div>
+<!--<script src="script.js"></script>-->
+</body>
+</html>

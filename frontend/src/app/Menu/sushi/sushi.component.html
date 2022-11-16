@@ -1,0 +1,473 @@
+<div class="switcher__item__containers">
+  <div class="boxCheck">
+    <p>No raw fish</p>
+    <label class="switch">
+      <input type="checkbox" (click)="rawFish($event)">
+      <span class="slider round"></span>
+    </label>
+  </div>
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  <div class="boxCheck">
+    <p style="text-align: center">Small</p>
+    <label class="switch">
+      <input type="checkbox" (click)="small($event)">
+      <span class="slider round"></span>
+    </label>
+  </div>
+  &nbsp;
+  &nbsp;
+  &nbsp;
+
+  <div class="boxCheck">
+    <p style="text-align: center">Combo</p>
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider round" (click)="combo($event)"></span>
+    </label>
+  </div>
+
+
+
+</div>
+
+
+<div class="container">
+        <div class="box">
+      <div class="product-item-wrapper">
+        <a href="/sushi" style="text-align: center">
+          <img src="../../../assets/fit_600_376 (2).png"  height="175" width="380" class="images"/>
+
+        </a>
+        <h3 data-key="1" class="text" style="text-align: center;">Dragon Chicken 4 PCS</h3>
+        <ul class="price">
+          <li><p class="text" data-key="1" style="font-size: 18px;">5.99 lv | 110 gr</p></li>
+
+        </ul>
+
+        <ul class="product-action">
+          <button class="button button3" data-key="1" (click)="change($event)">Change</button>
+
+          <button  class="button button1" data-key="1" (click)="buyElement($event)">Buy</button>
+        </ul>
+
+        <div id="none" style="text-align: center" >
+          <p class="text" style="font-weight: bold">Weight | Final price</p>
+          <button data-key="1" class="button button3" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+          <input data-key="1" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+          <input data-key="1" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+
+          <button data-key="1" style="width: 50px;font-size: 20px;text-align: center"  class="button button1" (click)="plus($event)">+</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="box">
+      <div class="product-item-wrapper">
+        <a href="/sushi" style="text-align: center">
+          <img src="../../../assets/sushi/fit_600_376.png" height="175" width="380" class="images"/></a>
+        <h3 data-key="2" class="text" style="text-align: center;">Filadelfia Chili-Laim 4 PCS</h3>
+        <ul class="price">
+          <li><p  class="text" data-key="2" style="">6.79 lv |  95  gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <button class="button button3" data-key="2" (click)="change($event)">Change</button>
+
+          <button  class="button button1" data-key="2" (click)="buyElement($event)">Buy</button>
+
+        </ul>
+
+
+        <div class="none" style="text-align: center" >
+          <p class="text" style="font-weight: bold">Weight | Final price</p>
+          <button data-key="2" class="button button3" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+          <input data-key="2" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+          <input data-key="2" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+
+          <button data-key="2" style="width: 50px;text-align: center"  class="button button1" (click)="plus($event)">+</button>
+
+        </div>
+
+      </div>
+    </div>
+
+  <div class="box">
+    <div class="product-item-wrapper">
+      <a href="/sushi" style="text-align: center">
+        <img src="../../../assets/sushi/fit_600_376 (1).png" height="175" width="380" class="images"/></a>
+      <h3 data-key="3" class="text" style="text-align: center">Fire Paradise 4 PCS</h3>
+      <ul class="price">
+        <li><p class="text" data-key="3" style="">6.49 lv | 85  gr</p></li>
+      </ul>
+      <ul class="product-action">
+        <button class="button button3" data-key="3" (click)="change($event)">Change</button>
+
+        <button  class="button button1" data-key="3" (click)="buyElement($event)">Buy</button>
+
+      </ul>
+
+      <div class="none" style="text-align: center" >
+        <p class="text" style="font-weight: bold">Weight | Final price</p>
+        <button data-key="3" class="button button3" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+        <input data-key="3" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+        <input data-key="3" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+
+        <button data-key="3" style="width: 50px;text-align: center"  class="button button1" (click)="plus($event)">+</button>
+
+      </div>
+
+    </div>
+  </div>
+
+<div class="box">
+      <div class="product-item-wrapper">
+        <a href="/sushi" style="text-align: center">
+
+          <img src="../../../assets/sushi/fit_600_376 (3).png" height="175" width="380" class="images"/></a>
+        <h3 data-key="4" class="text" style="text-align: center;font-size: 20px">Super Cheese Combo 16 PCS</h3>
+        <ul class="price">
+          <li><p  class="text" data-key="4" style="">16.99lv  | 370gr</p></li>
+        </ul>
+        <ul class="product-action">
+          <button class="button button3" data-key="4" (click)="change($event)">Change</button>
+
+          <button  class="button button1" data-key="4" (click)="buyElement($event)">Buy</button>
+
+        </ul>
+
+        <div class="none" style="text-align: center" >
+          <p class="text" style="font-weight: bold">Weight | Final price</p>
+          <button data-key="4" class="button button3" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+          <input data-key="4" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+          <input data-key="4" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+
+          <button data-key="4" style="width: 50px;font-size: 20px;text-align: center"  class="button button1" (click)="plus($event)">+</button>
+
+        </div>
+
+      </div>
+    </div>
+
+  <div class="box">
+    <div class="product-item-wrapper">
+      <a href="/sushi" style="text-align: center">
+        <img src="../../../assets/sushi/fit_600_376 (4).png" height="175" width="380" class="images"/></a>
+      <h3 data-key="5" class="text" style="text-align: center">Dragon Combo 18  PCS</h3>
+      <ul class="price">
+        <li><p class="text" data-key="5" style="">18.99 lv| 425  gr</p></li>
+      </ul>
+      <ul class="product-action">
+        <button class="button button3" data-key="5" (click)="change($event)">Change</button>
+
+        <button  class="button button1" data-key="5" (click)="buyElement($event)">Buy</button>
+
+      </ul>
+
+      <div class="none" style="text-align: center" >
+        <p class="text" style="font-weight: bold">Weight | Final price</p>
+        <button data-key="5" class="button button3" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+        <input data-key="5" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+        <input data-key="5" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+
+        <button data-key="5" style="width: 50px;text-align: center"  class="button button1" (click)="plus($event)">+</button>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="box">
+    <div class="product-item-wrapper">
+      <a href="/sushi" style="text-align: center">
+        <img src="../../../assets/sushi/fit_600_376 (5).png" height="175" width="380" class="images"/></a>
+      <h3 data-key="6" class="text" style="text-align: center">King Kong 26 PCS</h3>
+      <ul class="price">
+        <li><p class="text" data-key="6" style="">29.99 lv| 570  gr</p></li>
+      </ul>
+      <ul class="product-action">
+        <button class="button button3" data-key="6" (click)="change($event)">Change</button>
+
+        <button  class="button button1" data-key="6" (click)="buyElement($event)">Buy</button>
+
+      </ul>
+
+      <div class="none" style="text-align: center" >
+        <p class="text" style="font-weight: bold">Weight | Final price</p>
+        <button data-key="6" class="button button3" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+        <input data-key="6" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+        <input data-key="6" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+
+        <button data-key="6" style="width: 50px;text-align: center"  class="button button1" (click)="plus($event)">+</button>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="box">
+    <div class="product-item-wrapper">
+      <a href="/sushi" style="text-align: center">
+
+        <img src="../../../assets/sushi/fit_600_376 (6).png" height="175" width="380" class="images"/></a>
+      <h3 data-key="7" class="tex" style="text-align: center;">Truffle Chicken 8 PCS</h3>
+      <ul class="price">
+        <li><p class="text" data-key="7" style="">9.99 lv | 200  gr</p></li>
+      </ul>
+      <ul class="product-action">
+        <button class="button button3" data-key="7" (click)="change($event)">Change</button>
+
+        <button  class="button button1" data-key="7" (click)="buyElement($event)">Buy</button>
+
+      </ul>
+
+      <div class="none" style="text-align: center" >
+        <p class="text" style="font-weight: bold">Weight | Final price</p>
+        <button data-key="7" class="button button3" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+        <input data-key="7" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+        <input data-key="7" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+
+        <button data-key="7" style="width: 50px;text-align: center"  class="button button1" (click)="plus($event)">+</button>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="box">
+    <div class="product-item-wrapper">
+      <a href="/sushi" style="text-align: center">
+        <img src="../../../assets/sushi/fit_600_376 (7).png" height="175" width="380" class="images" /></a>
+      <h3 data-key="8" class="text" style="text-align: center">Fitness Chicken 8 PCS</h3>
+      <ul class="price">
+        <li><p class="text" data-key="8" style="">9.99 lv | 200  gr</p></li>
+      </ul>
+      <ul class="product-action">
+        <button class="button button3" data-key="8" (click)="change($event)">Change</button>
+
+        <button  class="button button1" data-key="8" (click)="buyElement($event)">Buy</button>
+
+      </ul>
+
+      <div class="none" style="text-align: center" >
+        <p class="text" style="font-weight: bold">Weight | Final price</p>
+        <button data-key="8" class="button button3" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+        <input data-key="8" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+        <input data-key="8" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+
+        <button data-key="8" style="width: 50px;text-align: center"  class="button button1" (click)="plus($event)">+</button>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="product-item-wrapper">
+      <a href="/sushi" style="text-align: center">
+        <img src="../../../assets/sushi/fit_600_376 (8).png"  height="175" width="380" class="images"/></a>
+      <h3 data-key="9" class="text" style="text-align: center;">Krabster 8 PCS</h3>
+      <ul class="price">
+        <li><p data-key="9" style="">7.49 lv | 140   gr</p></li>
+      </ul>
+      <ul class="product-action">
+        <button class="button button3" data-key="9" (click)="change($event)">Change</button>
+
+        <button  class="button button1" data-key="9" (click)="buyElement($event)">Buy</button>
+
+      </ul>
+
+      <div class="none" style="text-align: center" >
+        <p class="text" style="font-weight: bold">Weight | Final price</p>
+        <button data-key="9" class="button button3" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+        <input data-key="9" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+        <input data-key="9" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+
+        <button data-key="9" style="width: 50px;text-align: center"  class="button button1" (click)="plus($event)">+</button>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="box">
+    <div class="product-item-wrapper">
+      <a href="/sushi" style="text-align: center">
+        <img src="../../../assets/sushi/fit_600_376 withoutFish.png" height="175" width="380" class="images" />
+      </a>
+      <h3 data-key="10" class="text" style="text-align: center;">Salmon Combo 16 PCS</h3>
+      <ul class="price">
+        <li><p data-key="10" style="">32.99lv | 510 gr</p></li>
+      </ul>
+      <ul class="product-action">
+        <button class="button button3" data-key="10" (click)="change($event)">Change</button>
+
+        <button  class="button button1" data-key="10" (click)="buyElement($event)">Buy</button>
+
+      </ul>
+
+      <div class="none" style="text-align: center" >
+        <p class="text" style="font-weight: bold">Weight | Final price</p>
+        <button data-key="10" class="button button3" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+        <input data-key="10" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+        <input data-key="10" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+
+        <button data-key="10" style="width: 50px;text-align: center"  class="button button1" (click)="plus($event)">+</button>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="box">
+    <div class="product-item-wrapper">
+      <a href="/sushi" style="text-align: center">
+        <img src="../../../assets/sushi/fit_600_376 withOutFish (3).png" height="175" width="380" class="images"/>
+
+      </a>
+      <h3 data-key="11" class="text" style="text-align: center;">Best Seller 16 PCS</h3>
+      <ul class="price">
+        <li><p data-key="11" style="">28.99lv | 430 gr</p></li>
+      </ul>
+      <ul class="product-action">
+        <button class="button button3" data-key="11" (click)="change($event)">Change</button>
+
+        <button  class="button button1" data-key="11" (click)="buyElement($event)">Buy</button>
+
+      </ul>
+
+      <div class="none" style="text-align: center" >
+        <p class="text" style="font-weight: bold">Weight | Final price</p>
+        <button data-key="11" class="button button3" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+        <input data-key="11" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+        <input data-key="11" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+        <button data-key="11" style="width: 50px;text-align: center"  class="button button1" (click)="plus($event)">+</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="box">
+    <div class="product-item-wrapper">
+      <a href="/sushi" style="text-align: center">
+        <img src="../../../assets/sushi/fit_600_376 withoutFish (2).png" height="175" width="380" class="images"/>
+
+      </a>
+      <h3 data-key="12" class="text" style="text-align: center;">Lotus combo 12 PCS</h3>
+      <ul class="price">
+        <li><p data-key="12" style="">18.99lv | 265 gr</p></li>
+      </ul>
+      <ul class="product-action">
+        <button class="button button3" data-key="12" (click)="change($event)">Change</button>
+
+        <button  class="button button1" data-key="12" (click)="buyElement($event)">Buy</button>
+
+      </ul>
+
+      <div class="none" style="text-align: center" >
+        <p class="text" style="font-weight: bold">Weight | Final price</p>
+        <button data-key="12" class="button button3" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+        <input data-key="12" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+        <input data-key="12" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+
+        <button data-key="12" style="width: 50px;text-align: center"  class="button button1" (click)="plus($event)">+</button>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="product-item-wrapper">
+      <a href="/sushi" style="text-align: center">
+
+        <img src="../../../assets/sushi/fit_600_376 withOutFish3.png" height="175" width="380" class="images"/></a>
+      <h3 data-key="13" class="text" style="text-align: center;">Sexy combo 22 PCS</h3>
+      <ul class="price">
+        <li><p data-key="13" style="">28.99lv | 450 gr</p></li>
+      </ul>
+      <ul class="product-action">
+        <button class="button button3" data-key="13" (click)="change($event)">Change</button>
+
+        <button  class="button button1" data-key="13" (click)="buyElement($event)">Buy</button>
+
+      </ul>
+
+      <div class="none" style="text-align: center" >
+        <p class="text" style="font-weight: bold">Weight | Final price</p>
+        <button data-key="13" class="button button3" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+        <input data-key="13" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+        <input data-key="13" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+
+        <button data-key="13" style="width: 50px;text-align: center"  class="button button1" (click)="plus($event)">+</button>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="box">
+    <div class="product-item-wrapper">
+      <a href="/sushi" style="text-align: center">
+        <img src="../../../assets/sushi/fit_600_376 (2).png" height="175" width="380" class="images"/>
+      </a>
+      <h3 data-key="14" class="text" style="text-align: center;">Kamikade combo 22 PCS</h3>
+      <ul class="price">
+        <li><p data-key="14" style="">28.99lv | 480 gr</p></li>
+      </ul>
+      <ul class="product-action">
+        <button class="button button3" data-key="14" (click)="change($event)">Change</button>
+
+        <button  class="button button1" data-key="14" (click)="buyElement($event)">Buy</button>
+
+      </ul>
+
+      <div class="none" style="text-align: center" >
+        <p class="text" style="font-weight: bold">Weight | Final price</p>
+        <button data-key="14" class="button button3" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+        <input data-key="14" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+        <input data-key="14" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+
+        <button data-key="14" style="width: 50px;text-align: center"  class="button button1" (click)="plus($event)">+</button>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="box">
+    <div class="product-item-wrapper">
+      <a href="/sushi" style="text-align: center">
+        <img src="../../../assets/sushi/fit_600_376gdffgd.png" height="175" width="380" class="images"/>
+
+      </a>
+      <h3 data-key="15" class="text" style="text-align: center;">Sushi classic combo 14 PCS</h3>
+      <ul class="price">
+        <li><p data-key="15" style="">16.49lv | 250 gr</p></li>
+      </ul>
+      <ul class="product-action">
+        <button class="button button3" data-key="15" (click)="change($event)">Change</button>
+
+        <button  class="button button1" data-key="15" (click)="buyElement($event)">Buy</button>
+
+      </ul>
+
+      <div class="none" style="text-align: center" >
+        <p class="text" style="font-weight: bold">Weight | Final price</p>
+        <button data-key="15" class="button button3" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+        <input data-key="15" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+        <input data-key="15" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+
+        <button data-key="15" style="width: 50px;text-align: center"  class="button button1" (click)="plus($event)">+</button>
+
+      </div>
+    </div>
+  </div>
+
+
+</div>
+

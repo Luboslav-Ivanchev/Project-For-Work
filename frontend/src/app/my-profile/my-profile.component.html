@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My-Profile</title>
+</head>
+
+<body>
+
+
+<div class="container">
+  <div class="title">My profile</div>
+  <div>Write into inputs to change your information!</div>
+
+  <img src="{{information.profilePicture}}" alt="Avatar" class="avatar">
+
+  <div class="content">
+
+    <form action="#">
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">Username</span>
+          <input type="text" placeholder="Enter your name" required  value="{{information.userName}}">
+        </div>
+        <div class="input-box">
+          <span class="details">FirstName</span>
+          <input type="text" placeholder="Enter your username" required value="{{information.firstName}}">
+        </div>
+        <div class="input-box">
+          <span class="details">LastName</span>
+          <input type="text" placeholder="Enter your email" required value="{{information.lastName}}">
+        </div>
+        <div class="input-box">
+          <span class="details">Email</span>
+          <input type="text" placeholder="Enter your password" required value="{{information.email}}">
+        </div>
+        <div class="input-box">
+          <span class="details">Password</span>
+          <input type="text" placeholder="Enter your password" required value="{{information.password}}">
+        </div>
+        <div class="input-box">
+          <span class="details">Repeat Password</span>
+          <input type="text" placeholder="Confirm your password" required value="{{information.repeatPassword}}">
+        </div>
+
+        <div class="input-box">
+          <span class="details">Mobile Number </span>
+          <input type="text" placeholder="Confirm your password" required value="{{information.phoneNumber}}">
+        </div>
+
+
+        <div class="input-box">
+          <span class="details">Gender</span>
+          <input type="text" placeholder="Enter your number" required value="{{information.sex}}">
+        </div>
+
+        <div class="input-box">
+          <span class="details">Security Question</span>
+          <input type="text" placeholder="Enter your number" required value="{{information.securityQuestion}}">
+        </div>
+
+        <div class="input-box">
+          <span class="details">Country</span>
+          <input type="text" placeholder="Enter your number" required value="{{information.addresses.country}}">
+        </div>
+
+        <div class="input-box">
+          <span class="details">Town</span>
+          <input type="text" placeholder="Enter your number" required value="{{information.addresses.town}}">
+        </div>
+
+        <div class="input-box">
+          <span class="details">Postcode</span>
+          <input type="text" placeholder="Enter your number" required value="{{information.addresses.postcode}}">
+        </div>
+
+
+        <div class="input-box">
+          <span class="details">Address on your street</span>
+          <input type="text" placeholder="Enter your number" required value="{{information.addresses.addressLineOne}}">
+        </div>
+
+        <div class="input-box">
+          <span class="details">Height</span>
+          <input type="text" placeholder="Enter your number" required value="{{information.addSomethingPersonal[0].height}}">
+        </div>
+
+        <div class="input-box">
+          <span class="details">Favorite food</span>
+          <input type="text" placeholder="Enter your number" required value="{{information.addSomethingPersonal[0].favoriteFood}}">
+        </div>
+
+        <div class="input-box">
+          <span class="details">Favorite drink</span>
+          <input type="text" placeholder="Enter your number" required value="{{information.addSomethingPersonal[0].favoriteDrink}}">
+        </div>
+
+        <div class="input-box">
+          <span class="details">Weight</span>
+          <input type="text" placeholder="Enter your number" required value="{{information.addSomethingPersonal[0].weight}}">
+        </div>
+
+      </div>
+      <div class="button">
+        <input type="submit" value="Change your information!" (click)="changing($event)">
+      </div>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

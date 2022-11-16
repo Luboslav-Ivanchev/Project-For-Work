@@ -1,0 +1,700 @@
+
+<div class="container" >
+  <div class="box">
+
+    <div class="product-item-wrapper">
+      <a href="" style="text-align: center">
+        <img src="../../../assets/dishes/fit_600_376.png" height="150" width="350" class="img"/></a>
+      <h3 data-key="1"  style="text-align: center;">Chicken Steak With Mushrooms</h3>
+      <ul class="list">
+        <li>
+
+          <p style="text-align: center;font-size: 20px;color:#c7940a">With Garnish</p>
+
+        </li>
+        <li>
+          <div class="garnish" data-key="1" >
+
+            <label class="containerLabel">Baked flavored Potato-12.99lv
+              <input type="radio" class="check" (click)="onlyOne($event)" name="Baked flavored Potato" value="12.99lv-410gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Rice-14.99
+              <input type="radio"  class="check" (click)="onlyOne($event)"  name="Rice" value="14.99lv-520gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Mashed Potatoes-14.99
+              <input type="radio" class="check" (click)="onlyOne($event)" name="Mashed Potatoes"  value="14.99lv-450gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Roasted Vegetables-15.99
+              <input type="radio" class="check" (click)="onlyOne($event)" name="Roasted Vegetables" value="15.99lv-430gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Baked Fresh Potatoes-14.99
+              <input type="radio" class="check"  (click)="onlyOne($event)" name="Baked Fresh Potatoes" value="14.99lv-370gr">
+              <span class="checkmark"></span>
+            </label>
+
+          </div>
+        </li>
+        <li>
+
+          <p style="font-size: 20px;color: #c7940a;text-align: center">Without garnish</p>
+
+        </li>
+        <li>
+          <div class="garnishWithout" data-key="1">
+            <input type="checkbox"  value="Mushroom Sauce">
+            <label>Mushroom Sauce</label><br>
+            <input type="checkbox"  value="Rise">
+            <label>Rise</label><br>
+            <input type="checkbox"  value="Green Onion">
+            <label>Green onion</label><br>
+
+          </div>
+        </li>
+      </ul>
+      <ul class="price">
+        <li style="text-align: center;font-size: 20px;font-weight: bold">Final price | Weight</li>
+        <li><p  class="text" data-key="1" style="font-size: 20px;text-align: center"> 12,99 lv | 390 gr</p></li>
+      </ul>
+      <ul class="product-action">
+        <button class="button button1" data-key="1" (click)="info($event)">Information</button>
+        <button class="button button2" data-key="1" (click)="change($event)">Change</button>
+        <button  class="button button3" data-key="1" (click)="buyElement($event)">Buy</button>
+      </ul>
+
+      <div class="changePriceWeight" data-key="1" style="display: none">
+
+        <p class="text" style="font-weight: bold;">Weight | Final price</p>
+        <button data-key="1" class="btn buttonMinus" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+        <input data-key="1" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+        <input data-key="1" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+
+        <button data-key="1" style="width: 50px;font-size: 20px;text-align: center" class="btn buttonPlus" (click)="plus($event)">+</button>
+      </div>
+
+      <div class="textInformation" data-key="1">
+
+      </div>
+
+
+
+    </div>
+
+
+
+    <div class="product-item-wrapper">
+      <a href="" style="text-align: center">
+        <img src="../../../assets/dishes/fit_600_376 (1).png" height="175" width="380" class="img"/></a>
+      <h3 data-key="2"  style="text-align: center;">Chicken China</h3>
+      <ul class="list">
+        <li>
+
+
+          <p style="text-align: center;font-size: 20px;color:#c7940a">With Garnish</p>
+
+        </li>
+        <li>
+          <div class="garnish" data-key="2">
+
+            <label class="containerLabel">Baked flavored Potato-12.99lv
+              <input type="radio"   class="check" (click)="onlyOne($event)" name="Baked flavored Potato"  value="12.99lv-480gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Mashed Potatoes-14.99
+              <input type="radio" class="check" (click)="onlyOne($event)" name="Mashed Potatoes-"  value="14.99lv-460gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Baked Fresh Potatoes-14.99
+              <input type="radio" class="check" (click)="onlyOne($event)" name="Baked Fresh Potatoes" value="14.99lv-480gr">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </li>
+        <li>
+          <p style="font-size: 20px;color: #c7940a;text-align: center">Without garnish</p>
+
+        </li>
+        <li>
+          <div class="garnishWithout" data-key="2">
+            <input type="checkbox"  value="Green Onion">
+            <label>Green onion</label><br>
+            <input type="checkbox"   value="Onion">
+            <label>Onion</label><br>
+            <input type="checkbox"  value="Garlic">
+            <label>Garlic</label><br>
+            <input type="checkbox"   value="Mashed Potatoes">
+            <label>Mashed Potatoes</label><br>
+          </div>
+        </li>
+      </ul>
+      <ul class="price">
+        <li style="text-align: center;font-size: 20px;font-weight: bold">Final price | Weight</li>
+        <li><p class="text" data-key="2" style="font-size: 20px;text-align: center">12,99 lv | 390 gr</p></li>
+      </ul>
+      <ul class="product-action">
+        <button class="button button1" data-key="2"  (click)="info($event)">Information</button>
+        <button class="button button2" data-key="2" (click)="change($event)">Change</button>
+        <button  class="button button3" data-key="2" (click)="buyElement($event)">Buy</button>
+      </ul>
+
+      <div class="changePriceWeight" data-key="2" style="display: none">
+
+        <p class="text" style="font-weight: bold;">Weight | Final price</p>
+        <button data-key="2" class="btn buttonMinus" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+        <input data-key="2" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+        <input data-key="2" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+
+        <button data-key="2" style="width: 50px;text-align: center"  class="btn buttonPlus" (click)="plus($event)">+</button>
+      </div>
+
+      <div class="textInformation" data-key="2">
+
+      </div>
+
+    </div>
+
+
+    <div class="product-item-wrapper">
+      <a href="" style="text-align: center">
+        <img src="../../../assets/dishes/fit_600_376 (2).png" height="175" width="380" class="img"/></a>
+      <h3 data-key="3"  style="text-align: center;">Crispy Chicken </h3>
+      <ul class="list">
+        <li>
+
+          <p style="text-align: center;font-size: 20px;color:#c7940a">With Garnish</p>
+
+        </li>
+        <li>
+          <div class="garnish" data-key="3">
+
+
+            <label class="containerLabel">Baked flavored Potato-12.99lv
+              <input type="radio"  class="check" (click)="onlyOne($event)"  name="Baked flavored Potato" value="12.99lv-540gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Mashed Potatoes-14.99
+              <input type="radio" class="check" (click)="onlyOne($event)"  name="Mashed Potatoes" value="14.99lv-520gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Baked Fresh Potatoes-14.99
+              <input type="radio" class="check" (click)="onlyOne($event)"  name="Baked Fresh Potatoes" value="14.99lv-560gr">
+              <span class="checkmark"></span>
+            </label>
+
+
+          </div>
+        </li>
+        <li>
+          <p style="font-size: 20px;color: #c7940a;text-align: center">Without garnish</p>
+
+        </li>
+        <li>
+          <div class="garnishWithout" data-key="3">
+            <input type="checkbox"  value="Baked potatoes">
+            <label>Baked potatoes</label><br>
+            <input type="checkbox"   value="Green Onions">
+            <label>Green Onions</label><br>
+          </div>
+        </li>
+      </ul>
+      <ul class="price">
+        <li style="text-align: center;font-size: 20px;font-weight: bold">Final price | Weight</li>
+        <li><p class="text" data-key="3" style="font-size: 20px;text-align: center">12,99 lv | 390 gr</p></li>
+      </ul>
+      <ul class="product-action">
+        <button class="button button1" data-key="3"  (click)="info($event)">Information</button>
+        <button class="button button2" data-key="3" (click)="change($event)">Change</button>
+        <button  class="button button3" data-key="3" (click)="buyElement($event)">Buy</button>
+      </ul>
+
+      <div class="changePriceWeight" data-key="3" style="display: none">
+
+        <p class="text" style="font-weight: bold;">Weight | Final price</p>
+        <button data-key="3" class="btn buttonMinus" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+        <input data-key="3" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+        <input data-key="3" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+
+        <button data-key="3" style="width: 50px;text-align: center"  class="btn buttonPlus" (click)="plus($event)">+</button>
+      </div>
+
+      <div class="textInformation" data-key="3">
+
+      </div>
+
+    </div>
+
+    <div class="product-item-wrapper">
+      <a href="" style="text-align: center">
+        <img src="../../../assets/dishes/fit_600_376 (3).png"  height="175" width="380" class="img"/></a>
+      <h3 data-key="4"  style="text-align: center;">Fragile Cuts</h3>
+      <ul class="list">
+        <li>
+
+          <p style="text-align: center;font-size: 20px;color:#c7940a">With Garnish</p>
+
+        </li>
+        <li>
+          <div class="garnish" data-key="4">
+
+            <label class="containerLabel">Baked flavored Potato-12.99lv
+              <input type="radio"  class="check" (click)="onlyOne($event)"  name="Baked flavored Potato" value="12.99lv-440gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Mashed Potatoes-14.99
+              <input type="radio" class="check" (click)="onlyOne($event)"  name="Mashed Potatoes" value="14.99lv-420gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Baked Fresh Potatoes-14.99
+              <input type="radio" class="check" (click)="onlyOne($event)"  name="Baked Fresh Potatoes" value="14.99lv-530gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Rice-14.99
+              <input type="radio" class="check" (click)="onlyOne($event)" name="Rice" value="14.99lv-560gr">
+              <span class="checkmark"></span>
+            </label>
+
+          </div>
+        </li>
+        <li>
+          <p style="font-size: 20px;color: #c7940a;text-align: center">Without garnish</p>
+
+        </li>
+        <li>
+          <div class="garnishWithout" data-key="4">
+            <input type="checkbox"  value="Mushroom Sauce">
+            <label>Mushroom Sauce</label><br>
+            <input type="checkbox"  value="Green Onion">
+            <label>Green onion</label><br>
+          </div>
+        </li>
+      </ul>
+      <ul class="price">
+        <li style="text-align: center;font-size: 20px;font-weight: bold">Final price | Weight</li>
+        <li><p class="text" data-key="4" style="font-size: 20px;text-align: center">12,99 lv | 390 gr</p></li>
+      </ul>
+      <ul class="product-action">
+        <button class="button button1" data-key="4"  (click)="info($event)">Information</button>
+        <button class="button button2" data-key="4" (click)="change($event)">Change</button>
+        <button  class="button button3" data-key="4" (click)="buyElement($event)">Buy</button>
+      </ul>
+
+      <div class="changePriceWeight" data-key="4" style="display: none">
+
+        <p class="text" style="font-weight: bold;">Weight | Final price</p>
+        <button data-key="4" class="btn buttonMinus" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+        <input data-key="4" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+        <input data-key="4" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+
+        <button data-key="4" style="width: 50px;text-align: center"  class="btn buttonPlus" (click)="plus($event)">+</button>
+
+      </div>
+
+      <div class="textInformation" data-key="4">
+
+      </div>
+
+    </div>
+
+
+    <div class="product-item-wrapper">
+      <a href="" style="text-align: center">
+        <img src="../../../assets/dishes/fit_600_376 (4).png" height="175" width="380" class="img"/></a>
+      <h3 data-key="5"  style="text-align: center;">Patterned Place Black Pepper</h3>
+      <ul class="list">
+        <li>
+          <p style="text-align: center;font-size: 20px;color:#c7940a">With Garnish</p>
+
+        </li>
+        <li>
+          <div class="garnish" data-key="5">
+
+            <label class="containerLabel">Baked flavored Potato-12.99lv
+              <input type="radio"   class="check" (click)="onlyOne($event)" name="Baked flavored Potato" value="12.99lv-370gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Roasted Vegetables-15.99
+              <input type="radio" class="check" (click)="onlyOne($event)" name="Roasted Vegetables" value="15.99lv-560gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Baked Fresh Potatoes-14.99
+              <input type="radio" class="check" (click)="onlyOne($event)" name="Baked Fresh Potatoes" value="14.99lv-540gr">
+              <span class="checkmark"></span>
+            </label>
+
+
+          </div>
+        </li>
+        <li>
+          <p style="font-size: 20px;color: #c7940a;text-align: center">Without garnish</p>
+
+        </li>
+        <li>
+          <div class="garnishWithout" data-key="5">
+            <input type="checkbox"  value="Onion">
+            <label>Onion</label><br>
+            <input type="checkbox"   value=" Sesame">
+            <label>Sesame</label><br>
+            <input type="checkbox"  value="Coriander">
+            <label>Coriander</label><br>
+          </div>
+        </li>
+      </ul>
+      <ul class="price">
+        <li style="text-align: center;font-size: 20px;font-weight: bold">Final price | Weight</li>
+        <li><p class="text" data-key="2" style="font-size: 20px;text-align: center">12,99 lv | 390 gr</p></li>
+      </ul>
+      <ul class="product-action">
+        <button class="button button1" data-key="5"  (click)="info($event)">Information</button>
+        <button class="button button2" data-key="5" (click)="change($event)">Change</button>
+        <button  class="button button3" data-key="5" (click)="buyElement($event)">Buy</button>
+      </ul>
+
+
+      <div class="changePriceWeight" data-key="5" style="display: none">
+
+        <p class="text" style="font-weight: bold;">Weight | Final price</p>
+        <button data-key="5" class="btn buttonMinus" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+        <input data-key="5" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+        <input data-key="5" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+
+        <button data-key="5" style="width: 50px;text-align: center"  class="btn buttonPlus" (click)="plus($event)">+</button>
+
+
+      </div>
+
+      <div class="textInformation" data-key="5">
+
+      </div>
+
+    </div>
+
+
+    <div class="product-item-wrapper">
+      <a href="" style="text-align: center">
+        <img src="../../../assets/dishes/fit_600_376 (5).png" height="175" width="380" class="img"/></a>
+      <h3 data-key="6"  style="text-align: center;">Meatballs</h3>
+      <ul class="list">
+        <li>
+          <p style="text-align: center;font-size: 20px;color:#c7940a">With Garnish</p>
+
+        </li>
+        <li>
+          <div class="garnish" data-key="6">
+
+
+            <label class="containerLabel">Greek salad-12.99lv
+              <input type="radio"   class="check" (click)="onlyOne($event)" name="Greek salad"  value="12.99lv-450gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Crete salad-14.99
+              <input type="radio" class="check" (click)="onlyOne($event)"  name="Crete salad" value="14.99lv-570gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Baked Fresh Potatoes-14.99
+              <input type="radio" class="check"  (click)="onlyOne($event)" name="Baked Fresh Potatoes" value="14.99lv-540gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Shopska salad-15.99
+              <input type="radio" class="check" (click)="onlyOne($event)" name="Shopska salad" value="15.99lv-420gr">
+              <span class="checkmark"></span>
+            </label>
+
+          </div>
+        </li>
+        <li>
+          <p style="font-size: 20px;color: #c7940a;text-align: center">Without garnish</p>
+
+        </li>
+        <li>
+          <div class="garnishWithout" data-key="6">
+            <input type="checkbox"  value="Salt">
+            <label>Salt</label><br>
+            <input type="checkbox"   value="Black paper">
+            <label>Black paper</label><br>
+            <input type="checkbox"  value="Red Paper">
+            <label>Red Paper</label><br>
+          </div>
+        </li>
+      </ul>
+      <ul class="price">
+        <li style="text-align: center;font-size: 20px;font-weight: bold">Final price | Weight</li>
+        <li><p class="text" data-key="6" style="font-size: 20px;text-align: center">12,99 lv | 390 gr</p></li>
+      </ul>
+      <ul class="product-action">
+        <button class="button button1" data-key="6"  (click)="info($event)">Information</button>
+        <button class="button button2" data-key="6" (click)="change($event)">Change</button>
+        <button  class="button button3" data-key="6" (click)="buyElement($event)">Buy</button>
+      </ul>
+
+
+      <div class="changePriceWeight" data-key="6" style="display: none">
+
+        <p class="text" style="font-weight: bold;">Weight | Final price</p>
+        <button data-key="6" class="btn buttonMinus" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+        <input data-key="6" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+        <input data-key="6" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+
+        <button data-key="6" style="width: 50px;text-align: center"  class="btn buttonPlus" (click)="plus($event)">+</button>
+
+
+      </div>
+
+
+      <div class="textInformation" data-key="6">
+
+      </div>
+
+    </div>
+
+
+
+    <div class="product-item-wrapper">
+      <a href="" style="text-align: center">
+        <img src="../../../assets/dishes/fit_600_376 (6).png"  height="175" width="380" class="img"/></a>
+      <h3 data-key="7"  style="text-align: center;">Crispy Fillet White Fish From Alaska</h3>
+      <ul class="list">
+        <li>
+
+
+          <p style="text-align: center;font-size: 20px;color:#c7940a">With Garnish</p>
+
+        </li>
+        <li>
+          <div class="garnish" data-key="7">
+
+            <label class="containerLabel">Baked flavored Potato-12.99lv
+              <input type="radio"   class="check" (click)="onlyOne($event)"  name="Baked flavored Potato" value="12.99lv-570gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Rice-14.99
+              <input type="radio" class="check" (click)="onlyOne($event)" name="Rice"   value="14.99lv-460gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Mashed Potatoes-14.99
+              <input type="radio" class="check" (click)="onlyOne($event)"  name="Mashed Potatoes" value="14.99lv-380gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Roasted Vegetables-15.99
+              <input type="radio" class="check" (click)="onlyOne($event)" name="Roasted Vegetables" value="15.99lv-470gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Baked Fresh Potatoes-14.99
+              <input type="radio" class="check" (click)="onlyOne($event)" name="Baked Fresh Potatoes"  value="14.99lv-520gr">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </li>
+        <li>
+          <p style="font-size: 20px;color: #c7940a;text-align: center">Without garnish</p>
+
+        </li>
+        <li>
+          <div class="garnishWithout" data-key="7">
+            <input type="checkbox"  value="Mushroom Sauce">
+            <label>Mushroom Sauce</label><br>
+            <input type="checkbox"   value=" White sauce">
+            <label>White sauce</label><br>
+            <input type="checkbox"  value="Green Onion">
+            <label>Green onion</label><br>
+          </div>
+        </li>
+      </ul>
+      <ul class="price">
+        <li style="text-align: center;font-size: 20px;font-weight: bold">Final price | Weight</li>
+        <li><p class="text" data-key="7" style="font-size: 20px;text-align: center">12,99 lv | 390 gr</p></li>
+      </ul>
+      <ul class="product-action">
+        <button class="button button1" data-key="7"  (click)="info($event)">Information</button>
+        <button class="button button2" data-key="7" (click)="change($event)">Change</button>
+        <button  class="button button3" data-key="7" (click)="buyElement($event)">Buy</button>
+      </ul>
+
+      <div class="changePriceWeight" data-key="7" style="display: none">
+
+        <p class="text" style="font-weight: bold;">Weight | Final price</p>
+        <button data-key="7" class="btn buttonMinus" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+        <input data-key="7" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+        <input data-key="7" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+
+        <button data-key="7" style="width: 50px;text-align: center"  class="btn buttonPlus" (click)="plus($event)">+</button>
+
+      </div>
+
+      <div class="textInformation" data-key="7">
+
+      </div>
+
+    </div>
+
+
+    <div class="product-item-wrapper">
+      <a href="" style="text-align: center">
+
+        <img src="../../../assets/dishes/fit_600_376 (7).png" height="175" width="380" class="img"/></a>
+      <h3 data-key="8"  style="text-align: center;">Fish La Krem</h3>
+      <ul class="list">
+        <li>
+
+          <p style="text-align: center;font-size: 20px;color:#c7940a">With Garnish</p>
+
+        </li>
+        <li>
+          <div class="garnish" data-key="8">
+
+            <label class="containerLabel">Baked flavored Potato-12.99lv
+              <input type="radio"  class="check" (click)="onlyOne($event)" name="Baked flavored Potato"  value="12.99lv-460gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Rice-14.99
+              <input type="radio" class="check" (click)="onlyOne($event)" name="Rice"  value="14.99lv-540gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Mashed Potatoes-14.99
+              <input type="radio" class="check" (click)="onlyOne($event)" name="Mashed Potatoes" value="14.99lv-560gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Roasted Vegetables-15.99
+              <input type="radio" class="check" (click)="onlyOne($event)" name="Roasted Vegetables" value="15.99lv-470gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Baked Fresh Potatoes-14.99
+              <input type="radio" class="check"  (click)="onlyOne($event)" name="Baked Fresh Potatoes" value="14.99lv-500gr">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </li>
+        <li>
+          <p style="font-size: 20px;color: #c7940a;text-align: center">Without garnish</p>
+
+        </li>
+        <li>
+          <div class="garnishWithout" data-key="8">
+            <input type="checkbox"  value="Sauce">
+            <label>Sauce</label><br>
+            <input type="checkbox"  value="Green Onion">
+            <label>Green onion</label><br>
+          </div>
+        </li>
+      </ul>
+      <ul class="price">
+        <li style="text-align: center;font-size: 20px;font-weight: bold">Final price | Weight</li>
+        <li><p class="text" data-key="8" style="font-size: 20px;text-align: center">12,99 lv | 390 gr</p></li>
+      </ul>
+      <ul class="product-action">
+        <button class="button button1" data-key="8"  (click)="info($event)">Information</button>
+        <button class="button button2" data-key="8" (click)="change($event)">Change</button>
+        <button  class="button button3" data-key="8" (click)="buyElement($event)">Buy</button>
+      </ul>
+
+      <div class="changePriceWeight" data-key="8" style="display: none">
+
+        <p class="text" style="font-weight: bold;">Weight | Final price</p>
+        <button data-key="8" class="btn buttonMinus" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+        <input data-key="8" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+        <input data-key="8" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+
+        <button data-key="8" style="width: 50px;text-align: center"  class="btn buttonPlus" (click)="plus($event)">+</button>
+
+
+      </div>
+
+      <div class="textInformation" data-key="8">
+
+      </div>
+
+    </div>
+
+
+    <div class="product-item-wrapper">
+      <a href="" style="text-align: center">
+        <img src="../../../assets/dishes/fit_600_376 (8).png"  height="175" width="380" class="img"/></a>
+      <h3 data-key="9"  style="text-align: center;">Salmon</h3>
+      <ul class="list">
+        <li>
+
+
+          <p style="text-align: center;font-size: 20px;color:#c7940a">With Garnish</p>
+
+        </li>
+        <li>
+          <div class="garnish" data-key="9">
+
+            <label class="containerLabel">Baked flavored Potato-12.99lv
+              <input type="radio"   class="check" (click)="onlyOne($event)"  name="Baked flavored Potato" value="12.99lv-470gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Rice-14.99
+              <input type="radio" class="check"  (click)="onlyOne($event)"  name="Rice" value="14.99lv-420gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Mashed Potatoes-14.99
+              <input type="radio"  class="check" (click)="onlyOne($event)" name="Mashed Potatoes"  value="14.99lv-510gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Roasted Vegetables-15.99
+              <input type="radio"  class="check" (click)="onlyOne($event)" name="Roasted Vegetables" value="15.99lv-550gr">
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerLabel">Baked Fresh Potatoes-14.99
+              <input type="radio" class="check" (click)="onlyOne($event)" name="Baked Fresh Potatoes" value="14.99lv-520gr">
+              <span class="checkmark"></span>
+            </label>
+
+          </div>
+        </li>
+        <li>
+          <p style="font-size: 20px;color: #c7940a;text-align: center">Without garnish</p>
+
+        </li>
+        <li>
+          <div class="garnishWithout" data-key="9">
+            <input type="checkbox"  value="Mushroom Sauce">
+            <label>Mushroom Sauce</label><br>
+            <input type="checkbox"  value="Green onion">
+            <label>Green onion</label><br>
+          </div>
+        </li>
+      </ul>
+      <ul class="price">
+        <li style="text-align: center;font-size: 20px;font-weight: bold">Final price | Weight</li>
+        <li><p class="text" data-key="9" style="font-size: 20px;text-align: center">12,99 lv | 390 gr</p></li>
+      </ul>
+      <ul class="product-action">
+        <button class="button button1" data-key="9"  (click)="info($event)">Information</button>
+        <button class="button button2" data-key="9" (click)="change($event)">Change</button>
+        <button  class="button button3" data-key="9" (click)="buyElement($event)">Buy</button>
+      </ul>
+
+      <div class="changePriceWeight" data-key="9" style="display: none">
+
+        <p class="text" style="font-weight: bold;">Weight | Final price</p>
+        <button data-key="9" class="btn buttonMinus" style="width: 50px;font-size: 20px;text-align: center" (click)="minus($event)">-</button>
+        <input data-key="9" class="weight" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text"><cite style="font-weight: bold;font-size: 25px">|</cite>
+        <input data-key="9" class="prices" style="border:none;font-size: 20px;width: 60px;height: 30px;background-color: white" type="text">
+
+        <button data-key="9" style="width: 50px;text-align: center"  class="btn buttonPlus" (click)="plus($event)">+</button>
+
+
+      </div>
+
+      <div class="textInformation" data-key="9">
+
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Bar</title>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="/home" class="Header-branding" data-nc-element="branding" data-content-field="site-title">
+      <img src="../../../assets/aperfectplate-logo-black (1).png" height="50" width="120"/>
+    </a>
+
+  <form class="form" action="/form/submit">
+    <input type="text" name="text" class="search" placeholder="Search menu here!">
+    <button class="submit" (click)="urlEvent($event)">Search</button>
+  </form>
+
+  <ul class="main_nav" >
+    <li>
+      <a routerLink="home" class="nav_links">Home</a>
+    </li>
+    <li *ngIf="login!=='logged in'">
+      <a routerLink="register" class="nav_links">Register</a>
+    </li>
+
+    <li *ngIf="login==='logged in'">
+      <a routerLink="privacy-policy" class="nav_links">Privacy policy</a>
+    </li>
+    <li *ngIf="login!=='logged in'">
+      <a routerLink="login" class="nav_links">Login</a>
+    </li>
+    <li *ngIf="login==='logged in'">
+      <a href="{{url}}" class="nav_links">My Profile</a>
+    </li>
+    <li *ngIf="login==='logged in'">
+      <a routerLink="" class="nav_links" (click)="logout($event)">Logout</a>
+    </li>
+    <li>
+      <a routerLink="contact-with-us" class="nav_links">Contact</a>
+    </li>
+
+    <li>
+      <a routerLink="cart" class="nav_links"> <div class="icon-cart">
+      <div class="cart-line-1" style="background-color: #2CC3B5"></div>
+        <div class="cart-line-2" style="background-color: #2CC3B5"></div>
+        <div class="cart-line-3" style="background-color: #2CC3B5"></div>
+        <div class="cart-wheel" style="background-color: #2CC3B5"></div>
+      </div>
+      </a>
+
+    </li>
+  </ul>
+
+</nav>
+
+</body>
+</html>
